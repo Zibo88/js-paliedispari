@@ -40,10 +40,10 @@ const flippedWord = palindromWord(askWord)
 if(askWord == flippedWord){ 
 
    validation = true;
-
-   console.log(validation)
    
 }
+
+console.log(validation);
 
 
 
