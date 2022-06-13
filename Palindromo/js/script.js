@@ -4,31 +4,41 @@
 
 
 // chiedere all'utente una parola
-let userWordChoice = 'ciao';
-
-// invoco la variabile
-palindromWord (userWordChoice);
+let userWordChoice = prompt('Dimmi una parola');
 
 // variabile flag
 let validation = false;
 
 let reverseWord = '';
 
-console.log(reverseWord)
 
 // creo una funzione per capire se la parola è palindroma
-function palindromWord (userCheck) {
+function palindromWord(userCheck) {
 
    
     // creo un ciclo for per analizzare la parola
     for(let i = userWordChoice.length - 1; i >= 0; i--){
        
-        // userWordChoice[i] += reverseWord;  
+        reverseWord = reverseWord + userWordChoice;
+        
         
     }
 
-    
+    return reverseWord
+
 }
+
+if (reverseWord === userWordChoice){
+    validation = true;
+ 
+}
+
+console.log(reverseWord);
+
+// invoco la variabile
+palindromWord (userWordChoice);
+
+
 
 
 
