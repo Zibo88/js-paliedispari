@@ -1,14 +1,10 @@
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
 
-
-
-
 // 1. chiedere all'utente una parola
-let askWord = prompt('dimmi una parola')
+let askWord = prompt('Questa parola è palindroma?')
 // console.log("parola chiesta all'utente", askWord);
 
- 
 // creo una variabile booleana
 let validation = false;
 
@@ -30,11 +26,9 @@ function palindromWord(checkWord) {
 
 }
 
-
 // 3 invoco la funzione, tra le parentesi richiamo l'argomento che necessita per funzionare
 const flippedWord = palindromWord(askWord)
 // console.log('invoco la funzione', palindromWord)
-
 
 // 4 creo una condizione
 if(askWord == flippedWord){ 
@@ -43,6 +37,7 @@ if(askWord == flippedWord){
    
 }
 
+// stampo la soluzione
 console.log(validation);
 
 
