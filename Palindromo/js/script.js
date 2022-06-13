@@ -5,24 +5,34 @@
 // chiedo una parola
 let userWord = 'ciao';
 
+// invoco la funzione
+
+let reverseWord = palindromWord(userWord);
+
 // creo la funzione
 function palindromWord(test){
     
     let reverseWord = '';
+
+    let validation = false; 
 
 
     for(let i = test.length; i >= 0; i-- ){
 
         reverseWord = reverseWord + test[i];
 
-    console.log(reverseWord)
+       
         
     }
 
     return reverseWord
-
+    
     
 }
+
+console.log(reverseWord)
+
+
 
 
 
