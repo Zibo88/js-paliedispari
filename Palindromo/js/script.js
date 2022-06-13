@@ -1,40 +1,52 @@
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
 
+
+
+// function sumGenerator(numA, numB) {
+//     const sum = numA + numB;
+//     return sum;
+// }
+
+// let result = sumGenerator(10, 10);
+// console.log(result);
+
+
+// console.log("la somma di 6 + 6: " + sumGenerator(6, 6))
+
+
+
+
+
+
 // chiedere all'utente una parola
-let userWord = ('ciao');
-console.log('parola inserita', userWord);
+let userWordChoice = 'ciao';
 
+// invoco la variabile
+// palindromWord (userWordChoice);
 
+// variabile flag
+let validation = false;
 
+let reverseWord = '';
 
-// creo la funzione che analizzi se la parola è palindroma
-function palindromWord(userWordToCheck){
+console.log(reverseWord)
 
-
-    // creo una variabile flag
-    let validation = false;
-    let reverseWord = '';
-
-    // creo un ciclo che analizzi le parole dalla fine verso l'inizio
-    for(let i = userWordToCheck.length - 1; i >= 0; i--){
-       
-        reverseWord += userWordToCheck[i]
-
-        console.log(reverseWord)
-
-    }
-
-    if (reverseWord == userWord){
-
-        validation = true
-
-        console.log(userWord)
-    }
-
- 
+// creo una funzione per capire se la parola è palindroma
+function palindromWord (userCheck) {
 
    
+    // creo un ciclo for per analizzare la parola
+    for(let i = userWordChoice.length - 1; i >= 0; i--){
+       
+        // userWordChoice[i] += reverseWord;  
+        
+    }
 
+    
 }
+
+
+
+
 
