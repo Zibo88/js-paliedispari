@@ -6,7 +6,7 @@
 // Dichiariamo chi ha vinto.
 
 // Utente sceglie pari o dispari
-let userChoice = prompt('Scegli pari o dispari');
+let userChoice = prompt('Scegli pari o dispari'); 
 
 // numero scelto dall'utente
 let userNumber = parseInt (prompt('scegli un numero tra 1 e 5'));
@@ -28,13 +28,17 @@ evenOrOdd = numberEvenOrOdd (sum);
 
 let userMessage;
 
-if ( userChoice == 'pari' && sum % 2 == 0 ){
-    userMessage = alert('Hai vinto');
-}else if (userChoice == 'dispari' && sum % 2 !== 0 ){
-    userMessage = alert ('Hai vinto');
+if ( userChoice == evenOrOdd){
+    userMessage = 'Hai vinto';
+}else if (userChoice == evenOrOdd){
+    userMessage = 'Hai vinto';
 } else (
-    userMessage = alert ('Hai perso')
+    userMessage = 'Hai perso'
 )
+
+alert(userMessage)
+
+// console.log(userMessage)
 
 
 
